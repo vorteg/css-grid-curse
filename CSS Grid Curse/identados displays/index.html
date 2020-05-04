@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Displays</title>
+    <style>
+        body{
+            font-family: Arial;
+        }
+        .container{
+            display: grid;
+            grid-template: 35% 35% 35% /25% 25% 40%;
+
+        }
+        .item {
+            background: lightblue;
+            padding: 10px;
+            border: 1px solid red;
+        }
+        .item:nth-of-type(4){
+            background: blue;
+            overflow: auto;
+            /* display: subgrid; */
+            /* display: inline-grid; */
+            display: grid;
+            grid-template: 35% 35% 35%/25% 25% 47%;
+        }
+        .item .item {
+            background: yellow;
+
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        
+            <div class="item">contenido #1</div>
+            <div class="item">contenido #2</div>
+            <div class="item">contenido #3</div>
+            <div class="item">contenido #4
+                <!-- .item{subitem #$}*5  con esto multipla items-->
+            <div class="item">subitem #1</div>
+            <div class="item">subitem #2</div>
+            <div class="item">subitem #3</div>
+            <div class="item">subitem #4</div>
+            <div class="item">subitem #5</div>
+        
+            </div>
+            <div class="item">contenido #5</div>
+            <div class="item">contenido #6</div>
+            <div class="item">contenido #7</div>
+            <div class="item">contenido #8</div>
+            <div class="item">contenido #9</div>
+            <div class="item">contenido #10</div>
+            <div class="item">contenido #11</div>
+            <div class="item">contenido #12</div>
+        
+            
+    </section>
+</body>
+</html>
